@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Пыханов](https://up.htmlacademy.ru/htmlcss/40/user/2290545).
-* Наставник: `Антон Варнавский`. https://htmlacademy.ru/profile/anton_varnauski
+* Наставник: [Антон Варнавский]. (https://htmlacademy.ru/profile/anton_varnauski)
 
 ---
 
