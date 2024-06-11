@@ -1,0 +1,309 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.page-header {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: 700;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  color: inherit;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("../images/main/index-background.jpg");
+  background-color: #f2f2f2;
+  color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.lead {
+  font-family: "PT Sans", sans-serif;
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+}
+
+.infrastructure {
+  text-align: center;
+}
+
+.infrastructure-lead {
+  font-family: "PT Sans", sans-serif;
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.infrastructure-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.infrastructure-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+}
+
+.search {
+  text-align: center;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  background-image: url("../images/main/blurred-background.png");
+  background-color: #000000 ;
+  color: #f2f2f2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.Subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subscribe-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #82B3D3 ;
+  color: #f2f2f2;
+
+}
+
+.page-footer {
+  text-align: center
+}
+
+.footer-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  background: #f2f2f2;
+  text-decoration: none;
+
+}
+
+.copyright {
+
+}
+
+.filters-container {
+  background-image: url("../images/catalog/filters-background.png");
+  background-color: #f2f2f2;
+  color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  color: #000000;
+}
+
+.breadcrumbs-link {
+  color: #f2f2f2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #f2f2f2;
+  text-transform: capitalize;
+}
+
+.control-label {
+  font-weight: 700;
+}
+
+.button-wrapper {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-filter-submit {
+  background: #82B3D3 ;
+}
+
+.product-card {
+  background-color: #f2f2f2;
+}
+
+.product-card-link-title {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-card-type {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.product-card-button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-card-rating {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  background-color: #F2F2F2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination {
+  background-color: #ffffff;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.pagination-current {
+  color: #F2F2F2;
+  background-color: #ffffff;
+}
+
+.pagination-disabled {
+  background-color: #595959;
+}
+
