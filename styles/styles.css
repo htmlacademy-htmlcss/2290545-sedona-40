@@ -13,18 +13,59 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   background-color: #f2f2f2;
-  color: #000000;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
 }
 
 .page-header {
   background-color: #f2f2f2;
-  color: #000000;
+  color: #333333;
   font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 507px;
+}
+
+.navigation-user {
+  width: 88px;
+  margin-left: auto;
+}
+
+.header-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 88px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -36,12 +77,18 @@ body {
   text-align: center;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .hero {
-  background-image: url("../images/main/index-background.jpg");
-  background-color: #f2f2f2;
+  background-image: url("../images/main/index-background.jpg"), url("../images/main/index-backgroung-footer.svg");
+  background-color: #8273d3;
   color: #000000;
-  background-size: 100% auto;
+  background-position: center, center;
+  background-size: cover, 100% auto;
   background-repeat: no-repeat;
+
 }
 
 .lead {
@@ -55,7 +102,7 @@ body {
   text-align: center;
 }
 
-p {
+.description {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -63,8 +110,23 @@ p {
   text-align: center;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-img {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+  margin: 0;
+  padding: 0;
+
 }
 
 .advantages-title {
@@ -79,7 +141,15 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
 
+.advantages-item-wide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  width: 400px;
 }
 
 .infrastructure {
@@ -94,6 +164,19 @@ p {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.infrastructure-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+.infrastructure-item {
+  width: 400px;
 }
 
 .infrastructure-title {
@@ -130,14 +213,14 @@ p {
 
 .subscribe {
   background-image: url("../images/main/blurred-background.png");
-  background-color: #000000 ;
+  background-color: #82b3d3 ;
   color: #f2f2f2;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
 }
 
-.Subscribe-title {
+.subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -156,7 +239,7 @@ p {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  background-color: #82B3D3 ;
+  background-color: #82b3d3 ;
   color: #f2f2f2;
 
 }
@@ -182,7 +265,7 @@ p {
 
 .filters-container {
   background-image: url("../images/catalog/filters-background.png");
-  background-color: #f2f2f2;
+  background-color: #82b3d3;
   color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -231,7 +314,7 @@ p {
 }
 
 .catalog-filter-submit {
-  background: #82B3D3 ;
+  background: #82b3d3 ;
 }
 
 .product-card {
@@ -281,7 +364,7 @@ p {
   font-weight: 400;
   text-align: center;
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -292,18 +375,31 @@ p {
 
 .pagination-link {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   text-decoration: none;
   line-height: 20px;
   font-weight: 700;
 }
 
 .pagination-current {
-  color: #F2F2F2;
+  color: #f2f2f2;
   background-color: #ffffff;
 }
 
 .pagination-disabled {
   background-color: #595959;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
