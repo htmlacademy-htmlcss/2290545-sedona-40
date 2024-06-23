@@ -14,6 +14,20 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 html {
   height: 100%;
 }
@@ -30,26 +44,29 @@ body {
   color: #333333;
 }
 
-a {
-  text-decoration: none;
-}
-
 .page-header {
   background-color: #f2f2f2;
   color: #333333;
   font-weight: 700;
-}
-
-.navigation {
   display: flex;
   width: 1200px;
   margin: 0 auto;
 }
 
+.navigation-logo {
+  width: 138px;
+  margin-right: 40px;
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
+}
+
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 507px;
+  width: 339px;
 }
 
 .navigation-user {
@@ -72,7 +89,6 @@ a {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   color: inherit;
-  text-transform: capitalize;
   text-decoration: none;
   text-align: center;
 }
@@ -82,12 +98,12 @@ a {
 }
 
 .hero {
-  background-image: url("../images/main/index-background.jpg"), url("../images/main/index-backgroung-footer.svg");
   background-color: #8273d3;
+  background-image: url("../images/main/index-backgroung-footer.svg"), url("../images/main/index-background.jpg");
   color: #000000;
-  background-position: center, center;
-  background-size: cover, 100% auto;
-  background-repeat: no-repeat;
+  background-position: bottom center, center center;
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat, no-repeat;
 
 }
 
@@ -110,6 +126,15 @@ a {
   text-align: center;
 }
 
+.advantages-item-wide {
+  background-color: #82b3d3;
+  width: 100%;
+}
+
+.card-gray {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .page-container {
   width: 1200px;
   margin: 0 auto;
@@ -122,6 +147,7 @@ a {
 
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   margin: 0;
@@ -212,8 +238,9 @@ a {
 }
 
 .subscribe {
-  background-image: url("../images/main/blurred-background.png");
   background-color: #82b3d3 ;
+  background-image: url("../images/main/blurred-background.png");
+
   color: #f2f2f2;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -248,6 +275,23 @@ a {
   text-align: center
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1060px;;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  display: flex;
+  margin-left: 70px;
+  margin-right: 42px;
+
+}
+
+.page-footer-social-item {
+  Padding: 10px;
+}
+
 .footer-phone {
   font-weight: 400;
   font-size: 40px;
@@ -256,16 +300,23 @@ a {
   color: #000000;
   background: #f2f2f2;
   text-decoration: none;
+  display: flex;
+  max-width: 720px;
+  margin-right: auto;
+  padding: 5px 195px;
 
 }
 
 .copyright {
+  max-width: 112px;
+  margin-left: 70px;
 
 }
 
 .filters-container {
-  background-image: url("../images/catalog/filters-background.png");
   background-color: #82b3d3;
+  background-image: url("../images/catalog/filters-background.png");
+
   color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -294,7 +345,6 @@ a {
   line-height: 24px;
   font-weight: 700;
   color: #f2f2f2;
-  text-transform: capitalize;
 }
 
 .control-label {
@@ -315,6 +365,10 @@ a {
 
 .catalog-filter-submit {
   background: #82b3d3 ;
+}
+
+.catalog-products {
+  display: flex;
 }
 
 .product-card {
@@ -390,16 +444,4 @@ a {
   background-color: #595959;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
