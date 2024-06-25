@@ -128,7 +128,9 @@ body {
 
 .advantages-item-wide {
   background-color: #82b3d3;
+  display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
 .card-gray {
@@ -169,10 +171,6 @@ body {
   line-height: 21px;
 }
 
-.advantages-item-wide {
-  display: flex;
-  justify-content: space-between;
-}
 
 .advantages-item {
   width: 400px;
