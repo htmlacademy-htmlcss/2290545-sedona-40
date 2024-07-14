@@ -65,7 +65,7 @@
       </ol>
       <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group filter-infrastructure">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -86,7 +86,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group filter-house">
           <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -107,7 +107,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group filter-price">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <label class="filter-range-control">От
             <input type="text" name="min-interval" value="0">
@@ -256,10 +256,8 @@
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="subscribe-form-name">
-          <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-          <input class="text" placeholder="Ваш e-mail" type="email" name="user-email" id="user-email">
-        </p>
+        <label class="visually-hidden" for="user-email">Ваш e-mail</label>
+        <input class="text" placeholder="Ваш e-mail" type="email" name="user-email" id="user-email">
         <button class="subscribe-button" type="submit">Подписаться</button>
       </form>
     </section>
@@ -267,7 +265,6 @@
 </main>
 
 <footer class="page-footer" data-test="footer">
-  <div class="page-footer-container">
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="footer-social-link"
@@ -308,7 +305,7 @@
       <img class="htmlacademy-logo" src="images/footer/logotype-academy.svg" width="115" height="34"
            alt="логотип HTML Академии">
     </a>
-  </div>
+
 </footer>
 </body>
 </html>
