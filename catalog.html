@@ -55,7 +55,12 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="index.html">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
+              <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
+            </svg>
+          </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link breadcrumbs-home-link" href="#">
@@ -70,17 +75,20 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                <input class="control-input" type="checkbox" name="pool" checked>
+                <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                <input class="control-input" type="checkbox" name="parking" checked>
+                <span class="control-label">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="wifi">Wi-Fi
+                <input class="control-input" type="checkbox" name="wifi">
+                <span class="control-label">Wi-Fi</span>
               </label>
             </li>
           </ul>
@@ -91,34 +99,48 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="housing-type" value="hotel" checked>Гостиница
+                <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
+                <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="housing-type" value="motel">Мотель
+                <input class="control-input" type="radio" name="housing-type" value="motel">
+                <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="housing-type" value="apartment">Апартаменты
+                <input class="control-input" type="radio" name="housing-type" value="apartment">
+                <span class="control-label">Апартаменты</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="catalog-filter-group filter-price">
+        <fieldset class="catalog-filter-group fieldset-price">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <div class="range-wrapper">
-            <label class="filter-range-control">От
-              <input class="range-control-input" type="text" name="min-interval" value="0">
-            </label>
-            <label class="filter-range-control">До
-              <input class="range-control-input" type="text" name="max-interval" value="9000">
-            </label>
-            <button class="filter-range-handle min" type="button">
-              <span class="visually-hidden">Управление нижней границей стоимости</span>
-            </button>
+          <div class="catalog-filter-price-range">
+            <div class="range-wrapper-inputs">
+              <label class="filter-range-control">
+                <input class="range-control-input input-of-min-price" type="number" name="min-price" value="0">
+                <span class="price-range-label">от</span>
+              </label>
+              <label class="filter-range-control">
+                <input class="range-control-input input-of-max-price" type="number" name="max-price" value="9000">
+                <span class="price-range-label">до</span>
+              </label>
+            </div>
+            <div class="price-filter-scale">
+              <div class="range-bar" style="left: 0; width: 226px">
+                <button class="range-toggle toggle-min-price" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <button class="range-toggle toggle-max-price" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+              </div>
+            </div>
           </div>
         </fieldset>
         <div class="button-wrapper">
@@ -190,7 +212,7 @@
 
           <button class="button product-card-button blue-button favorite-button" type="button">В избранное</button>
 
-          <p class="product-card-stars product-card-stars-4">
+          <p class="product-card-stars product-card-stars-four">
             <span class="visually-hidden">4 звезды</span>
           </p>
 
@@ -210,7 +232,7 @@
 
           <button class="product-card-button green-button favorite-button" type="button">В избранном</button>
 
-          <p class="product-card-stars product-card-stars-4">
+          <p class="product-card-stars product-card-stars-four">
             <span class="visually-hidden">4 звезды</span>
           </p>
 
@@ -230,7 +252,7 @@
 
           <button class="product-card-button blue-button favorite-button" type="button">В избранное</button>
 
-          <p class="product-card-stars product-card-stars-3">
+          <p class="product-card-stars product-card-stars-three">
             <span class="visually-hidden">3 звезды</span>
           </p>
 
@@ -250,7 +272,7 @@
 
           <button class="product-card-button blue-button favorite-button" type="button">В избранное</button>
 
-          <p class="product-card-stars product-card-stars-2">
+          <p class="product-card-stars product-card-stars-two">
             <span class="visually-hidden">2 звезды</span>
           </p>
 
@@ -331,7 +353,6 @@
     <img class="htmlacademy-logo" src="images/footer/logotype-academy.svg" width="115" height="34"
          alt="логотип HTML Академии">
   </a>
-
 </footer>
 </body>
 </html>
