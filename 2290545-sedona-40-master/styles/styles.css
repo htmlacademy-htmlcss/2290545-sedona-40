@@ -177,7 +177,7 @@ body {
   text-align: center;
 }
 
-.navigation-link-current::after {
+.navigation-link-current::after{
   content: "";
   position: absolute;
   bottom: -22px;
@@ -212,22 +212,16 @@ body {
   max-width: 44px;
   max-height: 64px;
   text-decoration: none;
+
 }
 
 .navigation-user-link-favorite {
-  margin-left: 24px;
+  margin-left: 9px;
   margin-top: 2px;
-  position: relative;
 }
 
 .navigation-user-link,
 .navigation-user-link:focus path {
-  fill: #756157;
-  outline: none;
-}
-
-.navigation-user-link,
-.navigation-user-link:hover path {
   fill: #756157;
   outline: none;
 }
@@ -250,7 +244,7 @@ body {
   border-radius: 100vh;
   position: absolute;
   top: -11px;
-  left: 8px;
+  left: 25px;
 }
 
 .header-button {
@@ -461,7 +455,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 81px;
+  padding: 81px 81px 60px;
   padding-top: 182px;
 }
 
@@ -513,7 +507,7 @@ body {
   text-align: center;
   row-gap: 23px;
   margin: 0;
-  padding: 97px 120px;
+  padding: 117px 120px;
 }
 
 .search-title {
@@ -523,6 +517,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+
 }
 
 .search-description {
@@ -563,7 +558,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0 auto;
-  padding-top: 71px;
+  padding-top: 51px;
   padding-bottom: 109px;
 }
 
@@ -641,7 +636,7 @@ body {
   justify-content: space-between;
   text-align: center;
   background-color: #ffffff;
-  padding: 41px 74px 40px 80px;
+  padding: 43px 74px 40px 80px;
 }
 
 
@@ -1149,17 +1144,18 @@ body {
 }
 
 .filter-infrastructure {
-  max-width: 154px;
+  max-width: 150px;
   margin-right: 71px;
 }
 
 .filter-house {
-  min-width: 160px;
-  margin-right: 131px;
+  max-width: 150px;
+  margin-right: 160px;
 }
 
 .filter-price {
   max-width: 288px;
+
 }
 
 .catalog-filter-list {
@@ -1184,6 +1180,7 @@ body {
 .range-wrapper {
   display: flex;
   justify-content: center;
+
 }
 
 .filter-range-control {
@@ -1225,11 +1222,10 @@ body {
 
 .catalog-filter-submit {
   width: 191px;
-  margin-top: 49px;
-  margin-bottom: 39px;
-  margin-left: 19px;
+  margin-top: 56px;
+  margin-bottom: 32px;
+  margin-left: 20px;
   background-color: #82b3d3;
-  padding: 8px 50px;
 }
 
 .catalog-filter-reset {
@@ -1244,18 +1240,18 @@ body {
 }
 
 .catalog-wrapper {
-  justify-content: flex-end;
   display: flex;
   margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 20px;
   align-items: center;
-  padding: 38px 70px;
-  margin-top: 8px;
 }
 
 .catalog-products-title {
   width: 400px;
   margin: 0;
   margin-right: auto;
+  margin-left: 70px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1264,7 +1260,7 @@ body {
 
 .select-control {
   width: 292px;
-  margin-right: 68px;
+  margin-right: 140px;
   padding: 12px 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -1315,20 +1311,18 @@ body {
 
 .card-view-button-current {
   border: 2px solid #000000;
-  border-radius: 5px;
 }
 
-.card-view-button-item:hover                 {
+.card-view-button:hover {
   border: 2px solid #000000;
-  border-radius: 5px;
 }
 
-.card-view-button-item:focus-visible {
+.card-view-button:focus-visible {
   border-color: #83b3d3;
   outline: none;
 }
 
-.card-view-button-item:active {
+.card-view-button:active {
   opacity: 0.3;
 }
 
@@ -1516,19 +1510,20 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  gap: 18px;
+  gap: 16px 20px;
   border-radius: 4px;
   padding: 0 70px;
 }
 
 .product-card {
-  padding: 20px;
+  margin: 0;
+  max-width: 400px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  align-items: center;
-  gap: 16px 20px;
+  padding: 20px;
 }
 
 .product-card-link-title {
@@ -1545,33 +1540,33 @@ body {
 
 .product-card-link-title:hover,
 .hotels-list-link-image:hover {
-  opacity: 0.6;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
-
 .product-card-link-title:focus,
 .hotels-list-link-image:focus {
-  opacity: 0.4;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
   outline: 3px solid #83b3d3;
 }
 
 .product-card-link-title:active,
 .hotels-list-link-image:active {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .product-card-image {
   display: block;
+  padding-top: 20px;
+  margin-bottom: 16px;
   object-fit: cover;
 }
 
 .product-card-title {
   grid-column: 1/-1;
   word-wrap: break-word;
-  font-size: 24px;
-  line-height: 28px;
   font-weight: 700;
   color: #000000;
-  margin: 0;
 }
 
 .product-card-type {
@@ -1614,7 +1609,6 @@ body {
 
 .favorite-button {
   grid-column: 2 / 3;
-  padding: 8px;
 }
 
 .blue-button {
@@ -1647,11 +1641,8 @@ body {
 }
 
 .product-card-stars {
-  margin: 0;
   height: 17px;
   background-image: url("../images/catalog/star.svg");
-  background-size: 18px 17px;
-  background-repeat: space;
 }
 
 .product-card-stars-five {
@@ -1659,15 +1650,15 @@ body {
 }
 
 .product-card-stars-four {
-  width: 88px;
+  width: 72px;
 }
 
 .product-card-stars-three {
-  width: 62px;
+  width: 54px;
 }
 
 .product-card-stars-two {
-  width: 39px;
+  width: 36px;
 }
 
 .product-card-stars-one {
@@ -1679,7 +1670,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 76px;
+  padding-top: 40px;
   padding-bottom: 60px;
   padding-left: 70px;
   align-items: center;
@@ -1738,9 +1729,10 @@ body {
   text-align: center;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 69px;
-  padding-bottom: 110px;
+  padding-top: 96px;
+  padding-bottom: 104px;
   background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 .subscribe-title-catalog {
@@ -1749,12 +1741,6 @@ body {
   font-weight: 700;
   color: #000000;
   text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.black-text {
-  color: #333333;
 }
 
 .subscribe-button-catalog {
