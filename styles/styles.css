@@ -47,7 +47,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #000000;
 }
 
@@ -277,6 +277,7 @@ body {
   flex-grow: 1;
   max-width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
