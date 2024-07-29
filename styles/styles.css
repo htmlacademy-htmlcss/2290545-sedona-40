@@ -523,7 +523,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-
 }
 
 .search-description {
@@ -1185,7 +1184,6 @@ body {
 .range-wrapper {
   display: flex;
   justify-content: center;
-
 }
 
 .filter-range-control {
@@ -1252,7 +1250,6 @@ body {
   align-items: center;
   padding: 38px 70px;
   margin-top: 8px;
-
 }
 
 .catalog-products-title {
@@ -1532,7 +1529,6 @@ body {
   border-radius: 4px;
   align-items: center;
   gap: 16px 20px;
-
 }
 
 .product-card-link-title {
